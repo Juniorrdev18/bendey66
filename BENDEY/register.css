@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+
+body {
+    background-color: #31475e;
+    display: flex;
+}
+
+.cartula {
+    width: 50%;
+    height: 100vh;
+}
+
+.formis {
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.formis h1 {
+    color: white;
+    margin-top: 80px;
+}
+
+.yatienes {
+    text-align: right;
+    justify-content: right;
+    display: flex;
+}
+
+.yatienes a {
+    color: white;
+    margin-left: 5px;
+}
+
+
+.marca {
+    width: 50px;
+    height: 150px;
+    background-color: rgb(255, 145, 0);
+    margin-left: 80px;
+    justify-content: end;
+}   
+
+p {
+    color: #c0a87a;
+    margin-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content h1 {
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+form {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+form button {
+    background-color: rgb(104, 169, 180);
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    border-color: transparent;
+    height: 30px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+label {
+    margin: 20px;
+    margin-left: 0;
+}
+input {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: transparent;
+}
+
+.logis {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 97, 104);
+}
+
+
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marca {
+        margin: 0;
+    }
+
+    .cartula {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .logis {
+        margin: 0;
+    }
+
+    .formis {
+        margin-top: 20px;
+        height: auto;
+        width: auto;
+    }
+
+    .yatienes {
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+
+    .yatienes a {
+        margin-left: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .formis h1 {
+        margin-top: 40px;
+    }
+    
+    label {
+        width: 100%;
+    }
+
+    input {
+        width: 90%;
+    }
+}
